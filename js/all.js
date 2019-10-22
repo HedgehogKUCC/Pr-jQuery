@@ -1,11 +1,20 @@
 $(document).ready(function () {
-  $('.nav-menu > li > a').click(function (e) { 
-    e.preventDefault();
-    $(this).parent().find('ul').slideToggle();
-    $(this).toggleClass('nav-active');
+  // $('.nav-menu > li > a').click(function (e) { 
+  //   e.preventDefault();
+  //   $(this).parent().find('ul').slideToggle();
+  //   $(this).toggleClass('nav-active');
 
-    $(this).parent().siblings().find('ul').slideUp();
-    $(this).parent().siblings().find('a').removeClass('nav-active');
+  //   $(this).parent().siblings().find('ul').slideUp();
+  //   $(this).parent().siblings().find('a').removeClass('nav-active');
+  // });
+
+  $('.dropdown').click(function (e) { 
+    e.preventDefault();
+    $(this).toggleClass('clickchange');
+    $('.dropdown-open').toggleClass('open');
+
+    $(this).parent().siblings().find('ul').removeClass('open');
+    $(this).parent().siblings().find('a').removeClass('clickchange');
   });
 
   var mySwiper = new Swiper('.swiper-container', {
