@@ -72,7 +72,7 @@ table {
 }
 .header .bar .facebook a {
   margin-left: 20px;
-  border-right: 2px solid #cccccc;
+  /* border-right: 2px solid #cccccc; */
   padding-right: 9px;
   color: #5c74ab;
 }
@@ -157,7 +157,7 @@ table {
   z-index: 10;
 }
 .nav-menu .open {
-  height: 100px;
+  height: 131px;
 }
 .nav-menu > li > a {
   width: 132px;
